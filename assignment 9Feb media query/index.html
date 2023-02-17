@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <style>
+         .container{
+            background: rgb(36, 221, 150);
+            text-align: center;
+            height: 500px;
+            border: none;
+            border-radius: 15px;
+         }
+         .h1{
+            font-weight: bold;
+            font-size: 1rem;
+            font-family: 'Poppins', sans-serif;;
+         }
+         @media(min-width:425px)
+         {
+            .container{
+                background:crimson;
+                text-align: center;
+                
+            }
+            .h1{
+                font-size:3.5rem;
+            }
+        }
+            @media(min-width:768px){
+                .container{
+                    background-color: aqua;
+                    
+                }
+                .h1{
+                    font-size:3rem;
+                }
+            }
+            @media(min-width:1024px)
+            {
+                .container{
+                    background-color: rgba(130, 103, 51, 0.984);
+                }
+            }
+            @media(min-width:1440px)
+            {
+                .container{
+                    background-color: green;
+                }
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="h1">This is a Media Query demo page.</h1>
+    </div>
+</body>
+</html>
