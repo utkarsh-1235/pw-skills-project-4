@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+/*.navbar{
+   display: flex;
+   background-color: black;
+   color: white;
+   height: 70px;
+ align-items: center;
+ justify-content: space-around;
+ margin: 0 auto;
+ position: relative;
+ top: 0;
+}
+.navbar::before{
+    content: "";
+    background-color: black;
+    position:absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index:-1;
+    opacity: 0.4;
+}
+.logo{
+  height: 20px;
+  width: 40px;
+}
+.container ul{
+   display: flex;
+}
+.container ul li{
+    list-style: none;
+    font-size: 1rem;
+    font-weight: bold;
+    margin:10px;
+}
+.container ul li a{
+    text-decoration: none;
+    color: goldenrod;
+    display: block;
+    padding:3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    margin: 15px 10px;
+    z-index: -1;
+}
+.container ul a:hover{
+    color: white;
+    background-color: rgb(217, 27, 235);
+}
+.btn{
+    background-color: rgb(217, 27, 235);
+    color: white;
+    border-radius: 4px;
+    padding: 6px 20px;  
+    border: none;
+    margin: 17px;
+    font: 1.5rem;
+    cursor:pointer;
+    font-weight: bold;
+}*/
+.navbar{
+    display: flex;
+    align-items: center;
+    background-color: black;
+    position: relative;
+    top: 0px;
+}
+.navbar::before{
+    content: "";
+    background-color: black;
+    position:absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index:-1;
+    opacity: 0.4;
+}
+
+.navbar img{
+  width: 60px;
+  height: 30px;
+  margin-left: 30px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+.navbar ul{
+ display: flex;
+justify-content: center;
+ margin: 20px;
+
+}
+
+.navbar ul li{
+font-weight: bold;
+list-style: none;
+font-size: 1rem;
+font-weight: bold;
+margin-left:10px;
+}
+.navbar li a{
+  text-decoration: none;
+  color: white;
+  text-decoration: none;
+    display: block;
+    padding:3px 10px;
+    border-radius: 20px;
+    text-decoration: none;
+    margin: 0px 8px;
+    z-index: -1;
+}
+.navbar li a:hover{
+        color: white;
+        background-color: rgb(217, 27, 235);
+}
+.btn{
+    background-color: rgb(217, 27, 235);
+    color: white;
+    border-radius: 4px;
+    border: none;
+    margin-left: 400px;
+    font: 1.5rem;
+    cursor:pointer;
+    font-weight: bold;
+    width: 100px;
+}
+.sec{
+    display: block;
+    margin: 80px;
+    margin-left: 300px;
+    height: 400px;
+    width: 50%;
+    text-align: center;
+}
+.h1{
+    
+    color: white;
+    font-weight: bold;
+    font-size: 3rem;
+}
+.p{
+    color: white;
+    font-weight: bold;
+}
+.btn1{
+    background-color: rgb(217, 27, 235);
+    color: white;
+    border-radius: 4px;
+    border: none;
+    font: 1.5rem;
+    cursor:pointer;
+    font-weight: bold;
+    width: 150px;
+    height: 30px;
+    margin-top: 30px;
+}
+body{
+    background-image: url(./WhatsApp\ Image\ 2023-02-14\ at\ 08.08.09\ \(1\).jpeg);
+
+}
