@@ -1,1 +1,494 @@
+*{
+    margin: 0;
+    padding:0;
+    font-family: "Poppins", sans-serif;
+    outline: 0;
+    background: #000000;
+    color: #ffffff;
+    box-sizing: border-box;
+}  
+
+/* Removing of default css of anchor tag*/
+a{
+    text-decoration: none;
+}
+
+/*Removing default css of list tad*/
+li{
+    list-style: none;
+}
+
+body{
+    margin: 0 15vw;
+}
+
+/* designing the navigation menu */
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px 0;
+}
+nav img{
+
+    height: 25px;
+    width: 25px;
+}
+nav ul{
+    display: flex;
+}
+nav ul li{
+    margin:20px;
+}
+nav ul li a{
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+}
+nav ul li :first-child a{
+    font-size: 14px;
+    font-weight: 700;
+}
+/* designing navright section*/
+.nav-right-section{
+    display: flex;
+    align-items: center;
+}
+
+.nav-right-section button{
+    background: #1e1e21;
+    font-weight: 300;
+    border-radius: 8px;
+    font-size: 14px;
+    padding: 10px 40px;
+}
+
+/* designing main section */
+main{
+    display: flex;
+    align-items: flex-start;
+    margin: 30px;
+    position: relative;
+}
+.mainImg{
+    width: 250px;
+    position: relative;
+    top: -250px;
+    left: 70px;
+}
+.main{
+    margin-left: 180px;
+}
+.onEarImg{
+    width: 320px;
+    margin-left: 50px;
+    margin-bottom: 17px;
+}
+.main h1{
+    font-weight: 600;
+    font-size: 46px;
+    margin-bottom: 25px;
+}
+.main h4{
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+.main p{
+    width: 65%;
+    font-size: 12px;
+    font-weight: 300;
+    color: #bdc0c2;
+    line-height: 25px;
+    margin-bottom: 25px;
+}
+.shopping-bag-section{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: #1e1e21;
+    border-radius: 8px;
+    width: fit-content;
+    padding: 10px 25px;
+}
+.shopping-bag-section img{
+    width: 15px;
+    background-color: transparent;
+}
+.shopping-bag-section p{
+    margin-bottom: 0;
+    color:white ;
+    background-color: transparent;
+}
+.shopping-bag-section span{
+    background-color: transparent;
+}
+/*designing social media section */
+.social-media-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 50px;
+    position: relative;
+    top: -50px;
+    margin-bottom: 40px;
+}
+.social-media-section img{
+    scale: 0.8;
+    width: 80px;
+    filter: invert(1);
+}
+
+/* designing the specification section*/
+.specification{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 70px;
+}
+.specification-logo,.case-logo{
+    scale: 0.8;
+    margin-bottom: 20px;
+}
+.specification-list{
+    display: flex;
+}
+.specification-list img{
+    scale: 0.8;
+}
+img[alt="specification headphone image"]{
+    height:400px;
+    margin-right: 200px;
+}
+img[alt="mic"]{
+   height: 50px;
+   width: 50px;
+   filter: invert(1);
+}
+img[alt="charger"]{
+    height: 50px;
+    width: 50px;
+    filter: invert(1);
+}
+img[alt="bluetooth"]{
+  height: 50px;
+  width: 50px;
+  filter: invert(1);
+}
+.specification-list-items-first-child p{
+    margin-top: -5px;
+}
+img[alt="battery"]{
+   height: 50px;
+   width: 50px;
+   filter: invert(1);
+}
+.specification-list-items{
+    margin-top: -10px;
+}
+.specification-list-items div{
+    margin-bottom: 20px;
+}
+.specification-list-items div img{
+    scale: 0.8;
+}
+.specification-list-items div p{
+    font-size: 12px;
+}
+.specification-list-items div p:last-child {
+    color: #bdc0c2;
+    font-size: 10px;
+    margin-top: 5px;
+    width: 70%;
+  }
   
+  .specification-list-items div:first-child,
+  .specification-list-items div:last-child {
+    margin-left: 400px;
+  }
+  .specification-list-items-second-child,.specification-list-items-third-child{
+    margin-left: 300px;
+  }
+  .specification-logo{
+    width: 35%;
+  }
+
+  /* designing the case section*/
+  .case{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .case-item{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content:center ;
+  }
+  .case-item-img{
+    scale: 0.8;
+  }
+  .case-item div{
+    width: 20%;
+  }
+  .case-item div p:first-child{
+    color: #bdc0c2;
+    margin-bottom: 20px;
+    line-height: 25px;
+    font-weight: 400;
+    font-size: 12px;
+    
+  }
+  .case-item div p:last-child img{
+    scale: 0.8;
+    background-color: transparent;
+  }
+  .case-item div p:last-child{
+    width:fit-content;
+    background-color: #1e1e21;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 12px;
+    border-radius: 8px;
+    padding: 10px 20px;
+  }
+  img[alt="case logo"]{
+    scale: 0.4; 
+  }
+  .case-item-img{
+    height: 400px;
+    
+  }
+img[alt="group"]{
+    height: 50px;
+    width: 50px;
+}
+
+/* design buy product*/
+.buy-product{
+    background-color:black;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    gap: 50px;
+    padding: 40px 0;
+}
+.buy-product div,
+.buy-product p,
+.buy-product h3,
+.buy-product img {
+    background-color: transparent;
+}
+.buy-product div{
+  width: 25%;
+}
+.buy-product div h3{
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+.buy-product div p{
+    color: #bdc0c2;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+.buy-product div div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    background-color:#181a1b;
+    border-radius: 8px;
+    padding: 10px 20px;
+}
+.buy-product div div img{
+    scale: 0.8;
+    margin-right: 10px;
+    height: 50px;
+    width: 50px;
+}
+.buy-product div div p{
+    margin-bottom: 0;
+    font-size: 12px;
+    color: white;
+}
+.buy-product img[alt="buy now"]{
+    height: 200px;
+    width: 300px;
+}
+
+/* designing the product section for displaying the items */
+.product{
+    display: flex;
+    flex-direction: column;
+    margin: 0 150px;
+    align-items: center;
+}
+.product-logo{
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+    scale: 0.3;
+}
+.product-items{
+ display: flex;
+ flex-wrap: wrap;
+ align-items: center;
+ gap: 50px;
+ padding-left: 50px;
+}
+.product-card{
+    position: relative;
+    height: 130px;
+    width: 130px;
+    border-radius: 8px;
+}
+.product-img{
+    width: 75px;
+    height: 100px;
+    position: absolute;
+    z-index: 100;
+    top: -40px;
+    left: 28px;
+}
+.product-img,
+.product-card p,
+.product-card span,
+.product-card img,
+.product-card div {
+  background-color: transparent;
+}
+.product-info{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding:10px 15px;
+}
+.product-info p{
+    font-size: 12px;
+}
+.product-info p span{
+    color: #bdc0c2;
+}
+.product-info div{
+    background-color: #0a0a0b;
+    border-radius: 8px;
+    padding: 2px 6px;
+}
+.product-info div img {
+    width: 30px;
+    height: 30px;
+  }
+
+  /*designing footer section*/
+  .footer{
+    margin:100px 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: relative;
+  }
+  .footer-logo{
+    margin-top: -25px;
+    scale: 0.3;
+  }
+  .footer ul li :first-child a{
+    font-size: 12px;
+    color: white;
+  }
+  .footer ul li a{
+    font-size: 12px;
+    color: #BDC0C2;
+  }
+  
+ .footer ul li:first-child{
+    margin-bottom: 10px;
+    font-weight: bold;
+ }
+ .footer-subscription{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+ }
+ .footer-subscription div:first-child{
+    background: #181A1B;
+    border-radius: 8px;
+    padding: 5px 10px ;
+    display: flex;
+ }
+ .footer-subscription div:first-child input{
+    border: none;
+    background: transparent;
+ }
+ .subscribe-button{
+    background:  #0A0A0B;
+    border-radius: 8px;
+    padding: 10px 20px;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+ }
+ .subscribe-button img{
+    scale: 0.8;
+ }
+ .subscribe-button p{
+    font-size: 12px;
+ }
+ .footer-subscription div:last-child img{
+    margin-right: 10px;
+    scale: 0.8;
+ }
+ .arrow-up{
+    position:absolute;
+    right: -160px;
+    scale: 0.8;
+ }
+ img[alt="facebook"]{
+    height: 70px;
+    width: 70px;
+    filter: invert(1);
+ }
+ img[alt="linkedin"]{
+    height: 55px;
+    width: 50px;
+    filter: invert(1);
+ }
+ img[alt="instagram"]{
+    height: 65px;
+    width: 70px;
+    filter: invert(1);
+ }
+ img[alt="twitter"]{
+    height: 55px;
+    width: 50px;
+    filter: invert(1);
+ }
+ img[alt="rightArrow"]{
+    height: 30px;
+    width: 30px;
+ }
+ img[alt="upArrow"]{
+    height: 50px;
+    width: 50px;
+ }
+ .social-media{
+    position: relative;
+ }
+footer .copyright{
+     text-align: center;
+ }
+ footer .copyright p{
+    font-weight: 500;
+ }
+
+ /* for making responsive use media query*/
