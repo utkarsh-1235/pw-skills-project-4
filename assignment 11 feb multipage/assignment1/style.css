@@ -51,6 +51,10 @@ nav ul li :first-child a{
     font-size: 14px;
     font-weight: 700;
 }
+.navbar img[alt="menu"]{
+    display : none;
+    margin-right: -50px;
+}
 /* designing navright section*/
 .nav-right-section{
     display: flex;
@@ -481,9 +485,7 @@ img[alt="group"]{
     height: 50px;
     width: 50px;
  }
- .social-media{
-    position: relative;
- }
+
 footer .copyright{
      text-align: center;
  }
@@ -492,3 +494,14 @@ footer .copyright{
  }
 
  /* for making responsive use media query*/
+ @media (max-width:1126px)
+ {
+     .navbar ul {
+        display: none;
+     }
+      .navbar img[alt="menu"]{
+        display: block;
+        
+      }     
+
+ }
