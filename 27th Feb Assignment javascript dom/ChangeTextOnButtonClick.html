@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Heading Text</title>
+</head>
+<body>
+    <h1 id="heading">The most affordable learning platform</h1>
+    <button onclick="toggle()">Toggle Heading Text</button>
+    <script>
+        function toggle(){
+            const hello = document.getElementById('heading')
+                if(hello.textContent==="The most affordable learning platform")
+                {
+                    hello.textContent = "PW Skills"
+                }
+                else{
+                    hello.textContent = "The most affordable learning platform"
+                }
+        }
+        hello.toggle()
+    </script>
+</body>
+</html>
