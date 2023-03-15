@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do App</title>
+</head>
+<body>
+    
+        <h1> To Do List</h1>
+        <form>
+            <input type="text" id="new-item-input" placeholder="Add new item...">
+           <button type="submit" id="add-item-button">Add</button>
+        </form>
+    <ul id="item-list">
+
+    </ul>
+
+    <script>
+        const newItemInput = document.querySelector("#new-item-input")
+        const addItemButton = document.querySelector("#add-item-button")
+        const itemList = document.querySelector("#item-list")
+
+        addItemButton.addEventListener("click",function addItem(event){
+            event.preventDefault()
+            if(newItemInput.value.trim()==="")
+            {
+                return
+            }
+            const newItem = document.createElement('li')
+            const deletebutton = document.createElement('button')
+            newItem.textContent = newItemInput.value
+            deletebutton.textContent = "X"
+            deletebutton.className = "delete-button"
+
+            newItem.appendChild(deletebutton)
+            itemList.appendChild(newItem)
+
+            newItemInput.value = ""
+        })
+        itemList.addEventListener("click",function deleteItem(event){
+             /* if(event.target.className==="delete-button"){
+                const item = event.target.parentElement
+                itemList.removeChild("item")
+              }*/
+              if (event.target.className === "delete-button") {
+    const item = event.target.parentElement;
+    itemList.removeChild(item);
+        }
+    })
+    </script>
+</body>
+</html>

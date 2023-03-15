@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamically Add list Items to an Order list</title>
+</head>
+<body>
+    <ul id="learning-list" style="list-style-type:circle">
+        <li>HTML and Semantics</li>
+        <li>Starting with CSS</li>
+        <li>Working Template</li>
+        <li>Mobile responsive webpages</li>
+        <li>Grid and Flex-box in CSS</li>
+        <li>Projects using HTML & CSS</li>
+        <li>Version Control and Git</li>
+        <li>Getting Started with JavaScript</li>
+        <li>Advance JavaScript</li>
+        <li>Working with DOM</li>
+        <li>Making Projects using HTML, CSS and JavaScript</li>
+        <li>Understanding Fundamental of Computer Science</li>
+        <li>Getting Started with Database</li>
+        <li>Understanding the Database</li>
+        <li>Starting with NodeJS and Express</li>
+        <li>Understanding React and its Fundamentals</li>
+        <li>Understanding Hooks and Routers</li>
+        <li>Starting and Completing Full Fledge Projects</li>
+    </ul>
+    <button id="add-item-button">Add Item</button>
+    <p id="message"></p>
+    <script>
+        const learningList = [
+            "HTML and Semantics",
+"Starting with CSS",
+"Working Template",
+"Mobile responsive webpages",
+"Grid and Flex-box in CSS",
+"Projects using HTML & CSS",
+"Version Control and Git",
+"Getting Started with JavaScript",
+"Advance JavaScript",
+"Working with DOM",
+"Making Projects using HTML, CSS and JavaScript",
+"Understanding Fundamental of Computer Science",
+"Getting Started with Database",
+"Understanding the Database",
+"Starting with NodeJS and Express",
+"Understanding React and its Fundamentals",
+"Understanding Hooks and Routers",
+"Starting and Completing Full Fledge Projects"
+    ]
+
+    const addItemButton = document.querySelector("#add-item-button")
+    const message = document.querySelector("#message")
+    const list = document.querySelector("#learning-list")
+
+    let nextItemIndex = 0
+    addItemButton.addEventListener("click",function(){
+        if(nextItemIndex<list.length){
+
+            const newItem = document.createElement('li')
+            newItem.textContent = list[nextItemIndex]
+            list.append(newItem)
+            nextItemIndex++
+        }
+    else{
+        message.textContent = "All Items have been added."
+    }
+    })
+    </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #my-image{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+</style>
+<body>
+    <img src="./WhatsApp Image 2023-02-14 at 08.08.09 (1).jpeg" alt="Website Image" id="my-image">
+    </img>
+
+    <script>
+       const myImage = document.getElementById('my-image')
+       let x=0
+       let y=0
+       document.addEventListener("keydown",(event)=>{
+           switch(event.keycode){
+            case 37 :
+                x -= 10  // Left arrow
+                break
+            case 38 :
+                y -= 10   //Up arrow
+                break
+            case 39 : 
+                x +=10   //Right arrow
+            break
+            case 40 :
+                y += 10  //Down arrow
+                break
+
+            default :     return; // Exit if key code doesn't match                
+           }
+           // Update the position of the image
+  image.style.transform = `translate(${x}px, ${y}px)`;
+       })
+    </script>
+</body>
+</html>
