@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>On Key Press Event </title>
+</head>
+<style>
+
+    #container{
+    height: 200px;    
+    width: 50% ;
+    border:2px solid black;
+    text-align: center;
+    margin-left: 270px;
+    margin-top: 170px;
+    }
+    </style>
+<body>
+    <div id="container">
+        <h1 id="h1">Press Any key on Keyboard</h1>
+        <input type="text" id="inputbox" placeholder = "type any key">
+    </div>
+</body>
+<script>
+    const container = document.getElementById('container')
+     const h1 = document.getElementById('h1')
+     const inputBox = document.getElementById('inputbox')
+
+    inputBox.addEventListener('keypress',()=>{
+           container.style.backgroundColor = "crimson"
+
+           inputBox.addEventListener('keypress',()=>{
+            container.style.backgroundColor = "white"
+           })
+    })
+</script>
+</html>

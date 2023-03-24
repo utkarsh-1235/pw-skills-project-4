@@ -1,7 +1,7 @@
 const readline = require("readline")
 
 function wordCount(string){
- const words = string.toLowerCase().split(" ")
+ const words = string.toLowerCase().split("  ")
 
  const count = new Map()
  for(const word of words){

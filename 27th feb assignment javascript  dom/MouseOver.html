@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Mouseover Event</title>
+</head>
+<body>
+    <div id="container">
+        <p id="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae dolorum sapiente harum quibusdam nesciunt, delectus corporis quam consequatur possimus ad at quos repellat ut asperiores modi dolorem quaerat adipisci, dignissimos magnam numquam aspernatur ipsa? Culpa vero laudantium, possimus, quo non commodi quos dolorum maxime aliquam illo minima. Officiis aspernatur facilis deleniti! Repudiandae est neque vitae quis. Eaque quae commodi consequuntur dolor accusantium a dicta odit vitae, voluptas exercitationem dolore beatae natus cupiditate. Eveniet totam distinctio accusamus vel dicta unde, cum eligendi excepturi minus inventore illum in explicabo officiis tenetur harum quod delectus? Optio commodi mollitia error, ex soluta sed nemo.</p>
+
+    </div>
+</body>
+<script>
+    const para = document.getElementById("para")
+
+    para.addEventListener("mouseover",()=>{
+        para.style.textTransform = "capitalize" 
+
+        para.addEventListener("mouseover",()=>{
+            para.style.textTransform = "none"
+        })
+    })
+</script>
+</html>

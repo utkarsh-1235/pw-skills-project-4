@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter App</title>
+</head>
+<style>
+    #container{
+        text-align: center;
+        margin: 170px;
+        margin-left: 270px;
+        border: 2px solid black;
+        height: 200px;
+        width: 50%;
+    }
+    #btn3{
+           margin-left: 10px;
+           margin-top: 10px;
+            background-color: rgb(216, 202, 202);
+        border: 2px solid black;
+        border-radius: 3px;
+        padding: 7px;
+    }
+    #btn1{
+        background-color: rgb(216, 190, 190);
+        border: 2px solid black;
+        border-radius: 3px;
+        padding: 7px;
+    }
+    #btn2{
+        background-color: rgb(216, 202, 202);
+        border: 2px solid black;
+        border-radius: 3px;
+        padding: 7px;
+    }
+    #display-value{
+        border: 2px solid black;
+        padding:5px;
+        margin: 0 2px;
+    }
+</style>
+<body>
+    <div id="container">
+        <h1> Counter App</h1>
+        <div>
+            <button id="btn1">Decrement by 1</button>
+            <span id="display-value">0</span>
+            <button id="btn2"> Increment by 1</button>
+            <br>
+            
+            <button id="btn3"> Reset value</button>
+        </div>
+    </div>
+</body>
+<script>
+    const decrementbtn = document.getElementById('btn1')
+    const incrementbtn = document.getElementById('btn2')
+    const resetbtn = document.getElementById('btn3')
+    const displayValue = document.getElementById('display-value')
+
+    // for decrement button
+    decrementbtn.addEventListener('click',()=>{
+            const value = Number(displayValue.innerText)
+
+            if(value>0){
+             displayValue.innerText = value-1
+            }
+            else{
+                alert("Decrement in negative is not posssible")
+            }
+    })
+
+    //for increment button
+    incrementbtn.addEventListener('click',()=>{
+        const value = Number(displayValue.innerText)
+
+        if(value<10){
+            displayValue.innerText = value+1
+        }
+        else{
+            alert("Increment more than 10 is not possible")
+        }
+    })
+
+    // for reset button
+    resetbtn.addEventListener('click',()=>{
+        displayValue.innerText = 0
+    })
+</script>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouseout Event</title>
+</head>
+<style>
+    #container{
+        height: 300px;
+        width: 50%;
+        margin-left: 270px;
+        margin-top: 150px;
+        border: 2px solid black;
+    }
+      
+    #box1{
+        margin-top: 10px;
+        margin-left: 10px;
+        height:75px;
+        border: 2px solid black;
+        width: 20%;
+
+    }
+    #box2{
+        margin-top: 10px;
+        margin-left: 10px;
+        height:75px;
+        border: 2px solid black;
+        width: 20%;
+    }
+    #box3{
+        margin-top: 10px;
+        margin-left: 10px;
+        height:75px;
+        border: 2px solid black;
+        width: 20%;
+    }
+
+</style>
+<body>
+    <div id="container">
+        
+
+            <div id="box1">box1</div>
+            <div id="box2">box2</div>
+            <div id="box3">box3</div>
+    </div>
+</body>
+<script>
+    const container = document.getElementById('container')
+    const box1 = document.getElementById('box1')
+    const box2 = document.getElementById('box2')
+    const box3 = document.getElementById('box3')
+
+    container.addEventListener("mouseout",()=>{
+        container.style.display = "flex"
+        container.style.alignItems = "center"
+        container.style.justifyContent = "space-around"
+        box1.style.backgroundColor = "orangered"
+        box2.style.backgroundColor = "crimson"
+        box3.style.backgroundColor = "yellowgreen"
+        container.style.backgroundColor = "aqua"
+
+    })
+</script>
+</html>

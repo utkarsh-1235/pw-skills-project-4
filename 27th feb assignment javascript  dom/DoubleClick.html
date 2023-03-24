@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doucle Click Event</title>
+</head>
+<style>
+    #container{
+       /* background-image: url(https://cdn.pixabay.com/photo/2019/09/29/22/06/light-bulb-4514505__340.jpg);*/
+        height : 300px ;
+        width: 50%;
+    }
+    </style>
+<body>
+  <div id="container">
+      <button id="btn"> Double Click</button>
+  </div>    
+</body>
+<script>
+    const button = document.getElementById('btn')
+    const container = document.getElementById('container')
+  
+  button.addEventListener("dblclick",()=>{
+     container.style.backgroundImage = "url(https://cdn.pixabay.com/photo/2019/09/29/22/06/light-bulb-4514505__340.jpg)"
+
+        button.addEventListener("dblclick",()=>{
+            container.style.backgroundImage = "url(-------)"
+        })
+  })
+</script>
+</html>
