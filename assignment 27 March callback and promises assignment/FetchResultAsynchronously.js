@@ -29,7 +29,7 @@ function fetchData() {
     return new Promise((resolve, reject) => {
       axios.get('https://jsonplaceholder.typicode.com/todos/1')
         .then(response => {
-          if (!response.ok) {
+          if (response.status!==200) {
             throw new Error(`HTTP error! Status: ${response.status}`);
           }
           return response.json();
